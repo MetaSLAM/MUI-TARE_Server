@@ -1,2 +1,39 @@
-# MUI-TARE_Server
-MUI-TARE: Multi-Agent Cooperative Exploration with Unknown Initial Position
+:sectnums:
+:sectnumlevels: 1
+:toc: macro
+:toclevels: 2
+
+ifdef::env-github[]
+image:https://img.youtube.com/vi/6wZvEjBXfBA/maxresdefault.jpg[link=https://youtu.be/6wZvEjBXfBA]
+endif::[]
+
+ifdef::env-github[]
+image:https://img.youtube.com/vi/xS24fzNLly0/maxresdefault.jpg[link=https://youtu.be/xS24fzNLly0]
+endif::[]
+
+ifndef::env-github[]
+video::rAteGra5-xM[youtube]
+endif::[]
+
+== Overview
+Multi-agent exploration of a bounded 3D environment with unknown initial positions of agents is a challenging problem. It requires quickly exploring the environments as well as robustly merging the sub-maps built by the agents. We take the view that the existing approaches are either aggressive or conservative: Aggressive strategies merge two sub-maps built by different agents together when overlap is detected, which can lead to incorrect merging due to the false-positive detection of the overlap and is thus not robust. Conservative strategies direct one agent to revisit an excessive amount of the historical trajectory of another agent for verification before merging, which can lower the exploration efficiency due to the repeated exploration of the same space. To intelligently balance the robustness of sub-map merging and exploration efficiency, we develop a new approach for lidar-based multi-agent exploration, which can direct one agent to repeat another agent's trajectory in an adaptive manner based on the quality indicator of the sub-map merging process. Additionally, our approach extends the recent single-agent hierarchical exploration strategy to multiple agents in a cooperative manner by planning for agents with merged sub-maps together to further improve exploration efficiency. Our experiments show that our approach is up to 50% more efficient than the baselines on average while merging sub-maps robustly. 
+
+
+== Dependences
+The necessary module for large-scale multi-agent exploration includes
+
+Large-scale Disctributed Map Merging: * *https://github.com/MetaSLAM/AutoMerge_Server* 
+LiDAR Odometry: * *https://github.com/hku-mars/FAST_LIO**
+
+
+== Citation
+If you use this code for your research, please cite our papers. *https://arxiv.org/abs/2209.10775*
+
+[quote]
+@article{yin2022automerge,
+  title={AMUI-TARE: Multi-Agent Cooperative Exploration with Unknown Initial Position},
+  author={Jingtian Yan, Xingqiao Lin, Zhongqiang Ren, Shiqi Zhao, Jieqiong Yu, Chao Cao, Peng Yin, Ji Zhang, Sebastian Scherer},
+  journal={arXiv preprint arXiv:2209.10775},
+  year={2022}
+}
+
