@@ -17,9 +17,8 @@ Multi-agent exploration of a bounded 3D environment with unknown initial positio
 
 == Dependences
 The necessary module for large-scale multi-agent exploration includes
-
-Large-scale Disctributed Map Merging: * *https://github.com/MetaSLAM/AutoMerge_Server* 
-LiDAR Odometry: * *https://github.com/hku-mars/FAST_LIO**
+* *https://github.com/MetaSLAM/AutoMerge_Server* 
+* *https://github.com/hku-mars/FAST_LIO**
 
 
 == Citation
