@@ -19,7 +19,7 @@ Multi-agent exploration of a bounded 3D environment with unknown initial positio
 The necessary module for large-scale multi-agent exploration includes:
 
 * *https://github.com/MetaSLAM/AutoMerge_Server* 
-* *https://github.com/hku-mars/FAST_LIO**
+* *https://github.com/hku-mars/FAST_LIO*
 
 
 == Citation
